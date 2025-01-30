@@ -25,6 +25,10 @@
   --tw-content: '';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -593,9 +597,10 @@ video {
 
 .conhecimento-estudos {
   display: flex;
+  gap: 25px;
 }
 
-.lprogramacao, .tecnologias, .ferramantas{
+.lprogramacao, .tecnologias, .ferramantas {
   width: 33.33%;
 }
 
@@ -604,10 +609,6 @@ video {
   font-weight: 600;
   font-style: italic;
   padding-bottom: 10px;
-}
-
-.lprogramacao li, .tecnologias li, .ferramantas li{
-  font-size: 18px;
 }
 
 .pointer-events-none {
@@ -1147,7 +1148,7 @@ video {
 }
 
 .bg-\[\#\#1f2937\] {
-  background-color: ##1f2937;
+  background-color: #1f2937;
 }
 
 .bg-\[\#1f2937\] {
@@ -2088,5 +2089,37 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.conhecimento-estudos {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+.lprogramacao, .tecnologias, .ferramantas {
+  width: 100%;
+}
+.imagens-novas {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 64* -8);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  display: none !important;
+}
+.conhecimento {
+  text-align: center;
+  width: 100%;
 }
 }
